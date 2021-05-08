@@ -12,9 +12,9 @@ const evenRun = () => {
     return Math.floor(Math.random() * (maxInt - minInt)) + minInt;
   };
   let count = 0;
-  let even = true;
   for (let i = 0; i < 3; i += 1) {
     const randomInt = getRandomInt(1, 100);
+    let even = true;
     if (randomInt % 2 !== 0) {
       even = false;
     }
@@ -24,7 +24,7 @@ const evenRun = () => {
       console.log('Correct!');
       count += 1;
     }
-    if (even === false && answer === 'no') {
+    if (!even && answer === 'no') {
       console.log('Correct!');
       count += 1;
     }
@@ -32,17 +32,17 @@ const evenRun = () => {
       console.log(`'no' is wrong answer ;(. Correct answer was 'yes'. \nLet's try again, ${name}!`);
       break;
     }
-    if (even === false && answer === 'yes') {
+    if (!even && answer === 'yes') {
       console.log(`'yes' is wrong answer ;(. Correct answer was 'no'. \nLet's try again, ${name}!`);
       break;
     }
     if (answer !== 'yes' && answer !== 'no') {
-      console.log(`${answer} is wrong answer ;(. Correct answer was 'no'. \nLet's try again, ${name}!`);
+      console.log(`'${answer}' is wrong answer ;(. \nLet's try again, ${name}!`);
       break;
     }
   }
   if (count === 3) {
-    console.log('Congratulations, Bill!');
+    console.log(`Congratulations, ${name}!`);
   }
 };
 export default evenRun;
