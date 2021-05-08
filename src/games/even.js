@@ -12,24 +12,32 @@ const evenRun = () => {
     return Math.floor(Math.random() * (maxInt - minInt)) + minInt;
   };
   let count = 0;
+  let even = true;
   for (let i = 0; i < 3; i += 1) {
     const randomInt = getRandomInt(1, 100);
+    if (randomInt % 2 !== 0) {
+      even = false;
+    }
     console.log(`Question: ${randomInt}`);
     const answer = readlineSync.question('Your answer: ');
-    if (randomInt % 2 === 0 && answer === 'yes') {
+    if (even && answer === 'yes') {
       console.log('Correct!');
       count += 1;
     }
-    if (randomInt % 2 !== 0 && answer === 'no') {
+    if (even === false && answer === 'no') {
       console.log('Correct!');
       count += 1;
     }
-    if (randomInt % 2 === 0 && answer === 'no') {
+    if (even && answer === 'no') {
       console.log(`'no' is wrong answer ;(. Correct answer was 'yes'. \nLet's try again, ${name}!`);
       break;
     }
-    if (randomInt % 2 !== 0 && answer === 'yes') {
+    if (even === false && answer === 'yes') {
       console.log(`'yes' is wrong answer ;(. Correct answer was 'no'. \nLet's try again, ${name}!`);
+      break;
+    }
+    if (answer !== 'yes' && answer !== 'no') {
+      console.log(`${answer} is wrong answer ;(. Correct answer was 'no'. \nLet's try again, ${name}!`);
       break;
     }
   }
