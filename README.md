@@ -4,7 +4,10 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
 ### Brain-even installation and launching example:
-https://asciinema.org/a/413642
+[![asciicast](https://asciinema.org/a/413642.svg)](https://asciinema.org/a/413642)
 
 ### Brain-calc installation and launching example:
-https://asciinema.org/a/413643
+[![asciicast](https://asciinema.org/a/413643.svg)](https://asciinema.org/a/413643)
+
+### Brain-gcd installation and launching example:
+[![asciicast](https://asciinema.org/a/413652.svg)](https://asciinema.org/a/413652)
