@@ -11,3 +11,6 @@
 
 ### Brain-gcd installation and launching example:
 [![asciicast](https://asciinema.org/a/413652.svg)](https://asciinema.org/a/413652)
+
+### Brain-progression installation and launching example:
+[![asciicast](https://asciinema.org/a/413670.svg)](https://asciinema.org/a/413670)
