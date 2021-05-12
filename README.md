@@ -5,3 +5,6 @@
 
 ### Brain-even installation and launching example:
 https://asciinema.org/a/412804
+
+### Brain-calc installation and launching example:
+https://asciinema.org/a/412804
