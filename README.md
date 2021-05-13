@@ -14,3 +14,6 @@
 
 ### Brain-progression installation and launching example:
 [![asciicast](https://asciinema.org/a/413670.svg)](https://asciinema.org/a/413670)
+
+### Brain-prime installation and launching example:
+[![asciicast](https://asciinema.org/a/413794.svg)](https://asciinema.org/a/413794)
