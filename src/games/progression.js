@@ -14,7 +14,7 @@ const progressionQuestionAndAnswer = () => {
   }
   const correctAnswer = String(intArray[hiddenIntPosition]);
   intArray[hiddenIntPosition] = '..';
-  const question = `${intArray}`;
+  const question = intArray.join(' ');
   return { question, correctAnswer };
 };
 const progressionRun = () => {
