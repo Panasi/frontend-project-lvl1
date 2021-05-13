@@ -3,16 +3,18 @@ import { randomInt } from '../cli.js';
 
 const calcRules = 'What is the result of the expression?';
 const calcFunction = (num1, oper, num2) => {
+  let result = 0;
   if (oper === '+') {
-    return (num1 + num2);
+    result = (num1 + num2);
   }
   if (oper === '-') {
-    return (num1 - num2);
+    result = (num1 - num2);
   }
   if (oper === '*') {
-    return (num1 * num2);
+    result = (num1 * num2);
   }
-}
+  return result;
+};
 const calcQuestionAndAnswer = () => {
   const firstInt = randomInt(1, 100);
   const secondInt = randomInt(1, 100);
