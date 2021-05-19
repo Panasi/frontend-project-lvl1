@@ -10,10 +10,5 @@ export const randomInt = (min, max) => {
   const maxInt = Math.floor(max);
   return Math.floor(Math.random() * (maxInt - minInt)) + minInt;
 };
-export const isEven = (question) => {
-  if (question % 2 === 0) {
-    return 'yes';
-  }
-  return 'no';
-};
+export const isEven = (num) => (num % 2 === 0);
 export default greetings;
