@@ -9,7 +9,7 @@ rules:
   linebreak-style: 0
   
 extends:
-  - airbnb-base
+  - 'airbnb-base'
 
 parserOptions:
   ecmaVersion: 11
